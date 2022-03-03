@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/clickerFragment">
+
+    <fragment
+        android:id="@+id/clickerFragment"
+        android:name="ru.iis.framework.ui.clicker.ClickerFragment"
+        android:label="ClickerFragment" />
+
+    <fragment
+        android:id="@+id/initiaiveFragment"
+        android:name="ru.iis.framework.ui.initiative.InititativeFragment"
+        android:label="InitiaiveFragment" />
+
+    <fragment
+        android:id="@+id/knowledgeFragment"
+        android:name="ru.iis.framework.ui.knowledge.KnowledgeFragment"
+        android:label="KnowledgeFragment" />
+</navigation>
