@@ -28,7 +28,7 @@ public class ClickerFragment extends BaseFragment implements ClickerContract.Vie
 
     @Inject
     ClickerPresenter clickerPresenter;
-    float points;
+    double points;
     float baseCoast;
 
     @Nullable
@@ -52,7 +52,7 @@ public class ClickerFragment extends BaseFragment implements ClickerContract.Vie
             @Override
             public void run() {
                 clickerPresenter.afkPlus(baseCoast);
-                clickerPresenter.savePoints(points);
+                clickerPresenter.savePoints((float)points);
             }
         };
         timer.schedule(timerTask,0,1000);
@@ -94,17 +94,17 @@ public class ClickerFragment extends BaseFragment implements ClickerContract.Vie
 
     @Override
     public void onPause() {
-        clickerPresenter.savePoints(points);
+        clickerPresenter.savePoints((float)points);
         super.onPause();
     }
 
     @Override
     public void onDestroyView() {
-        clickerPresenter.savePoints(points);
+        clickerPresenter.savePoints((float)points);
         super.onDestroyView();
     }
 
-    public static double roundAvoid(float value, int places) {
+    public static double roundAvoid(double value, int places) {
         double scale = Math.pow(10, places);
         return Math.round(value * scale) / scale;
     }
