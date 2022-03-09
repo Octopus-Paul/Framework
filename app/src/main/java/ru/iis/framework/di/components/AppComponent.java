@@ -15,9 +15,8 @@ import ru.iis.framework.ui.test.TestFragment;
 @Singleton
 @Component(modules = {RepositoryModule.class, NetworkModule.class})
 public interface AppComponent {
-
+    //Инжектить при создании нового фрагмента
     void inject(TestFragment testFragment);
-
     void inject(AuthFragment authFragment);
     void inject(ProfileFragment profileFragment);
     void inject(ClickerFragment clickerFragment);

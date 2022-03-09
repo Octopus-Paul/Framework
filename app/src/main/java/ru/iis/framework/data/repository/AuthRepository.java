@@ -8,6 +8,7 @@ import ru.iis.framework.data.network.NetworkApi;
 
 public class AuthRepository {
 
+    //Осталось от шаблонга архитектуры
     private final Prefs prefs;
     private final NetworkApi api;
 

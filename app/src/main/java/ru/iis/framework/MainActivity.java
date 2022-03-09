@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         navController = navHostFragment.getNavController();
     }
 
+    //Настройка навигации bnm
     public void setMenu(int type) {
         bnm.setOnItemSelectedListener(null);
         bnm.setVisibility(View.VISIBLE);

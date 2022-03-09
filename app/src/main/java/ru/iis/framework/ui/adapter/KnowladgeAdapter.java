@@ -22,13 +22,13 @@ public class KnowladgeAdapter extends RecyclerView.Adapter<KnowladgeAdapter.View
     int[] icons;
     boolean[] flags;
     KnowledgeContract.View contract;
-
+    //Конструктор адаптера
     public KnowladgeAdapter(String[] names, long[] coast, float[] bonus, int[] icons,boolean[] flags, KnowledgeContract.View contract) {
         this.names=names;       this.coast=coast;
         this.bonus=bonus;       this.icons=icons;
         this.contract=contract; this.flags=flags;
     }
-
+    //Не трогать!
     @NonNull
     @NotNull
     @Override
@@ -39,7 +39,7 @@ public class KnowladgeAdapter extends RecyclerView.Adapter<KnowladgeAdapter.View
                 false);
         return new ViewHolder(binding);
     }
-
+    //Заполнение элементов даннымии и листенером клика
     @Override
     public void onBindViewHolder(@NonNull @NotNull ViewHolder holder, int position) {
         holder.binding.image.setImageResource(icons[position]);
@@ -60,13 +60,12 @@ public class KnowladgeAdapter extends RecyclerView.Adapter<KnowladgeAdapter.View
             });
         }
     }
-
-
+    //Получение кол-ва элементов
     @Override
     public int getItemCount() {
         return names.length;
     }
-
+    //Не трогать
     public static class ViewHolder extends  RecyclerView.ViewHolder{
 
         ItemProductBinding binding;

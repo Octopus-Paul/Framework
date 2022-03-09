@@ -38,21 +38,28 @@ public class KnowledgeFragment extends BaseFragment implements KnowledgeContract
 
     @Inject
     KnowledgePresenter knowledgePresenter;
+    //Очки
     float points;
+    //Переменная формулы
     float speed;
+    //Массив купленных товаров
     boolean[] flags;
+    //Адаптер
     KnowladgeAdapter knowladgeAdapter;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentKnowledgeBinding.inflate(inflater, container, false);
-
+        //Получение из памяти очков
         points= knowledgePresenter.getPoints();
+        //Получение переменной формулы
         speed = knowledgePresenter.getSpeed();
+        //Помещение кол-ва очков в поле
         changeCount(points);
+        //Получение из памяти очков
         flags=knowledgePresenter.getKnowledges();
-
+        //Инициализация адаптера и работа с ним
         knowladgeAdapter = new KnowladgeAdapter(KNOWLEDGES_NAME,KNOWLEDGES_BASE,KNOWLEDGES_ADD,
                                                 KNOWLEDGES_ICONS, flags,this);
         GridLayoutManager glm = new GridLayoutManager(requireContext(), 2);
@@ -62,38 +69,38 @@ public class KnowledgeFragment extends BaseFragment implements KnowledgeContract
 
         return binding.getRoot();
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     public void inject() {
         App.getAppComponent().inject(this);
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     public void showError(String error) {
         Toast.makeText(requireContext(), error, Toast.LENGTH_SHORT).show();
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     protected void attachView() {
         knowledgePresenter.attachView(this);
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     protected void detachPresenter() {
         knowledgePresenter.detachView();
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     public void onDestroy() {
         super.onDestroy();
     }
-
+    //Помещение текста в поле
     @Override
     public void changeCount(float sum) {
         points=sum;
         binding.pointsCount.setText(String.valueOf(roundAvoid(points,1)));
     }
-
+    //Логика клика по кнопке в списке
     @SuppressLint("NotifyDataSetChanged")
     @Override
     public void buyButton(float speed, float minus, int position) {
@@ -110,19 +117,19 @@ public class KnowledgeFragment extends BaseFragment implements KnowledgeContract
             Toast.makeText(requireContext(), "Не хватает средств", Toast.LENGTH_SHORT).show();
         }
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     public void onPause() {
         knowledgePresenter.savePoints(points);
         super.onPause();
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     public void onDestroyView() {
         knowledgePresenter.savePoints(points);
         super.onDestroyView();
     }
-
+    //Округление
     public static double roundAvoid(float value, int places) {
         double scale = Math.pow(10, places);
         return Math.round(value * scale) / scale;

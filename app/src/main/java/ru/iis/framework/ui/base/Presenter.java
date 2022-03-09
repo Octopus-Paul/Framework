@@ -1,7 +1,7 @@
 package ru.iis.framework.ui.base;
 
 public interface Presenter<V extends BaseView> {
-
+    //НЕ ТРОГАТЬ!
     /**
      * Called when view attached to presenter
      *

@@ -20,13 +20,13 @@ public class InitiativeAdapter extends RecyclerView.Adapter<InitiativeAdapter.Vi
     float[] bonus;
     int[] icons;
     InitiativeContract.View contract;
-
+    //Конструктор адаптера
     public InitiativeAdapter(String[] names, int[] coast, float[] bonus, int[] icons, InitiativeContract.View contract) {
         this.names=names;   this.coast=coast;
         this.bonus=bonus;   this.icons=icons;
         this.contract=contract;
     }
-
+    //Не трогать!
     @NonNull
     @NotNull
     @Override
@@ -37,7 +37,7 @@ public class InitiativeAdapter extends RecyclerView.Adapter<InitiativeAdapter.Vi
                 false);
         return new ViewHolder(binding);
     }
-
+    //Заполнение элементов данными и листенером клика
     @Override
     public void onBindViewHolder(@NonNull @NotNull ViewHolder holder, int position) {
         holder.binding.image.setImageResource(icons[position]);
@@ -48,13 +48,12 @@ public class InitiativeAdapter extends RecyclerView.Adapter<InitiativeAdapter.Vi
                 .replace("$points",String.valueOf(bonus[position])));
         holder.binding.buyButton.setOnClickListener(v->contract.buyButton(bonus[position], coast[position]));
     }
-
-
+    //Получение кол-ва элементов
     @Override
     public int getItemCount() {
         return names.length;
     }
-
+    //Не трогать
     public static class ViewHolder extends  RecyclerView.ViewHolder{
 
         ItemProductBinding binding;

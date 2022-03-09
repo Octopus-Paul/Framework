@@ -5,7 +5,7 @@ import javax.inject.Inject;
 import ru.iis.framework.data.repository.AuthRepository;
 import ru.iis.framework.data.repository.TestRepository;
 import ru.iis.framework.ui.base.BasePresenter;
-
+//Осталось от шаблона
 public class TestPresenter extends BasePresenter<TestContract.View> implements TestContract.Presenter {
 
     public TestRepository testRepository;
@@ -25,12 +25,5 @@ public class TestPresenter extends BasePresenter<TestContract.View> implements T
     @Override
     public void getTestItems() {
         checkViewAttached();
-
-        authRepository.getTest()
-                .subscribe(testItems -> {
-                    getView().testItemResult(testItems);
-                }, throwable -> {
-                    getView().showError(throwable.getMessage());
-                });
     }
 }

@@ -33,7 +33,9 @@ public class InititativeFragment extends BaseFragment implements InitiativeContr
 
     @Inject
     InitiativePresenter initiativePresenter;
+    //Очки
     float points;
+    //Переменная формулы
     float baseCoast;
 
     @Nullable
@@ -41,10 +43,12 @@ public class InititativeFragment extends BaseFragment implements InitiativeContr
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentInitiativeBinding.inflate(inflater, container, false);
 
+        //Получение из памяти очков
         points= initiativePresenter.getPoints();
         baseCoast = initiativePresenter.getBaseCoast();
+        //Помещение кол-ва очков в поле
         changeCount(points);
-
+        //Инициализация адаптера и работа с ним
         InitiativeAdapter initiativeAdapter = new InitiativeAdapter(INITIATIVES_NAME,INITIATIVES_BASE,INITIATIVES_ADD,
                                                                     INITIATIVES_ICONS, this);
         GridLayoutManager glm = new GridLayoutManager(requireContext(), 2);
@@ -54,38 +58,38 @@ public class InititativeFragment extends BaseFragment implements InitiativeContr
 
         return binding.getRoot();
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     public void inject() {
         App.getAppComponent().inject(this);
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     public void showError(String error) {
         Toast.makeText(requireContext(), error, Toast.LENGTH_SHORT).show();
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     protected void attachView() {
         initiativePresenter.attachView(this);
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     protected void detachPresenter() {
         initiativePresenter.detachView();
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     public void onDestroy() {
         super.onDestroy();
     }
-
+    //Помещение текста в поле
     @Override
     public void changeCount(float sum) {
         points=sum;
         binding.pointsCount.setText(String.valueOf(roundAvoid(points,1)));
     }
-
+    //Логика клика по кнопке в списке
     @Override
     public void buyButton(float bonus, float minus) {
         if(minus<points){
@@ -97,20 +101,19 @@ public class InititativeFragment extends BaseFragment implements InitiativeContr
         }else{
             Toast.makeText(requireContext(), "Не хватает средств", Toast.LENGTH_SHORT).show();
         }
-
     }
-
+    //Округление
     public static double roundAvoid(float value, int places) {
         double scale = Math.pow(10, places);
         return Math.round(value * scale) / scale;
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     public void onPause() {
         initiativePresenter.savePoints(points);
         super.onPause();
     }
-
+    //НЕ ТРОГАТЬ!
     @Override
     public void onDestroyView() {
         initiativePresenter.savePoints(points);

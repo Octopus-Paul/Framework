@@ -1,7 +1,7 @@
 package ru.iis.framework.ui.main.profile;
 
 import ru.iis.framework.ui.base.BaseView;
-
+//Осталось от шаблона
 public class ProfileContract {
 
     public interface View extends BaseView {

@@ -3,7 +3,7 @@ package ru.iis.framework.ui.base;
 import javax.inject.Inject;
 
 public class MvpFragment<P> extends BaseFragment {
-
+    //НЕ ТРОГАТЬ!
     @Inject
     public P presenter;
 

@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import ru.iis.framework.App;
 import ru.iis.framework.databinding.FragmentProfileBinding;
 import ru.iis.framework.ui.base.BaseFragment;
-
+//Осталось от шаблона
 public class ProfileFragment extends BaseFragment implements ProfileContract.View {
 
     FragmentProfileBinding binding;

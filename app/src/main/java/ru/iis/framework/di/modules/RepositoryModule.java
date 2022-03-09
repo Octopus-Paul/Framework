@@ -16,8 +16,8 @@ import ru.iis.framework.data.repository.TestRepository;
 
 @Module
 public class RepositoryModule {
-
-    private Context context;
+    //Конструкторы репозиториев
+    private final Context context;
 
     public RepositoryModule(Context context){
         this.context = context;

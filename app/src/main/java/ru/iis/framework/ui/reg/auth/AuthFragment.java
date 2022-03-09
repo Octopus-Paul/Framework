@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import ru.iis.framework.App;
 import ru.iis.framework.databinding.FragmentAuthBinding;
 import ru.iis.framework.ui.base.BaseFragment;
-
+//Осталось от шаблона
 public class AuthFragment extends BaseFragment implements AuthContract.View {
 
     FragmentAuthBinding binding;

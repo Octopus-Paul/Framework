@@ -7,7 +7,7 @@ import android.util.DisplayMetrics;
 import ru.iis.framework.di.components.AppComponent;
 import ru.iis.framework.di.components.DaggerAppComponent;
 import ru.iis.framework.di.modules.RepositoryModule;
-
+//!НИЧЕГО ТУТ НЕ ТРОГАТЬ!
 public class App extends Application {
 
     private static Context appContext;

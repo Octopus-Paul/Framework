@@ -4,7 +4,7 @@ import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
 public class BasePresenter<V extends BaseView> implements Presenter<V> {
-
+    //НЕ ТРОГАТЬ!
     private final CompositeDisposable compositeDisposable = new CompositeDisposable();
     private V mvpView;
 

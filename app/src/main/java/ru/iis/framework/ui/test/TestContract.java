@@ -1,7 +1,7 @@
 package ru.iis.framework.ui.test;
 
 import ru.iis.framework.ui.base.BaseView;
-
+//Осталось от шаблона
 public class TestContract {
 
     public interface View extends BaseView {

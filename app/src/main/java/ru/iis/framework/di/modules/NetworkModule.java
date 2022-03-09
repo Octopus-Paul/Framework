@@ -19,7 +19,7 @@ import ru.iis.framework.utils.Constants;
 
 @Module
 public class NetworkModule {
-
+    //Осталось от шаблона архитектуры, было лень удалять
     @Provides
     public HttpLoggingInterceptor provideLoggingInterceptor() {
         return new HttpLoggingInterceptor().setLevel(BuildConfig.DEBUG ? HttpLoggingInterceptor.Level.BODY : HttpLoggingInterceptor.Level.NONE);

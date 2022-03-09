@@ -1,7 +1,7 @@
 package ru.iis.framework.ui.reg.auth;
 
 import ru.iis.framework.ui.base.BaseView;
-
+//Осталось от шаблона
 public class AuthContract {
 
     public interface View extends BaseView {

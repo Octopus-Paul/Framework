@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import ru.iis.framework.App;
 import ru.iis.framework.databinding.FragmentTestBinding;
 import ru.iis.framework.ui.base.BaseFragment;
-
+//Осталось от шаблона
 public class TestFragment extends BaseFragment implements TestContract.View {
 
     FragmentTestBinding binding;
