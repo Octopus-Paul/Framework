@@ -16,16 +16,18 @@ public class Constants {
 
     //Знания-название
     public static final String[] KNOWLEDGES_NAME={"Сходить в\nбиблиотеку","Поучаствовать в\nолимпиаде","Подготовиться к\nконтрольной","Посетить\nконференцию","Подготовить\nпроект","Сходить на\nпрактику",
-                                                    "Работа над\nдипломом","Стать\nбакалавром","Стать\nмагистром","Стать\nасперантом","Стать\nректором"};
+                                                    "Работа над\nдипломом","Стать\nбакалавром","Стать\nмагистром","Стать\nасперантом","Зщитить\nкандидатскую","Защитить\nдокторскую","Стать\nзав. кафедрой",
+                                                        "Стать\nдеканом","Стать\nпроректором","Стать\nректором"}; //16
     //Знания-цена
-    public static final long[] KNOWLEDGES_BASE= new long[]{15, 100, 500, 3000, 10000, 40000, 200000, 1666666, 1234567, 12345670,123456700};
+    public static final long[] KNOWLEDGES_BASE= new long[]{15, 100, 500, 3000, 10000, 40000, 100000, 350000, 1000000, 3000000,5000000,10000000,15000000,25000000,35000000,50000000};
     //Знания-баф формулы
-    public static final float[] KNOWLEDGES_ADD= new float[]{0.1f,0.3f,0.4f,1,4,10,40,66,987,9999,100000};
+    public static final float[] KNOWLEDGES_ADD= new float[]{0.1f,0.3f,0.4f,1,5,25,70,250,750,2300,4500,10000,15000,27000,40000,75000};
     //Знания-дэф значения. Используется до первого сейва, что бы не ловить null
-    public static final boolean[] KNOWLEDGES_BUYED=new boolean[]{false,false,false,false,false,false,false,false,false,false,false};
+    public static final boolean[] KNOWLEDGES_BUYED=new boolean[]{false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false};
     //Знания-айдишники иконок
     public static final int[] KNOWLEDGES_ICONS=new int[]{R.drawable.ic_library,R.drawable.ic_sport,R.drawable.ic_cup,R.drawable.ic_meeting,R.drawable.ic_project,R.drawable.ic_practic,
-                                                        R.drawable.ic_diplom,R.drawable.ic_bachelor,R.drawable.ic_magistr,R.drawable.ic_aspirant,R.drawable.ic_rector};
+                                                        R.drawable.ic_diplom,R.drawable.ic_bachelor,R.drawable.ic_magistr,R.drawable.ic_aspirant,R.drawable.ic_rector,R.drawable.ic_doc,
+                                                        R.drawable.ic_zav,R.drawable.ic_dec,R.drawable.ic_prorec,R.drawable.ic_rector1};
 
     //Инициативы-текст
     public static final String[] INITIATIVES_NAME={"Помочь\nстудсовету","Сходить в\nНЕОН","Посетить\nярморку","Сходить в\nКВН"};
