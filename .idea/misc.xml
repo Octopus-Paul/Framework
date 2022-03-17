@@ -23,6 +23,7 @@
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_knowledge.xml" value="0.1775" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_kvn.xml" value="0.1" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1775" />
+        <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_library.xml" value="0.1775" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_meeting.xml" value="0.332" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_neon.xml" value="0.332" />
@@ -43,6 +44,7 @@
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/layout/item_product.xml" value="0.13636363636363635" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16875" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>
