@@ -45,6 +45,17 @@ public class ClickerFragment extends BaseFragment implements ClickerContract.Vie
         baseCoast = clickerPresenter.getBaseCoast();
         //Листенер клика по иконке ИИС
         binding.plusButton.setOnClickListener(v-> clickerPresenter.clickPlus(baseCoast));
+        binding.imageButton7.setOnClickListener(v->{binding.imageView.setVisibility(View.GONE);
+            binding.plusButton.setVisibility(View.GONE);
+            binding.CardView.setVisibility(View.GONE);
+            binding.imageView.setVisibility(View.VISIBLE);
+            binding.points.setVisibility(View.GONE);});
+
+        binding.imageView.setOnClickListener(v->{
+            binding.plusButton.setVisibility(View.VISIBLE);
+            binding.CardView.setVisibility(View.VISIBLE);
+            binding.imageView.setVisibility(View.GONE);
+            binding.points.setVisibility(View.VISIBLE);});
 
         timerMethod();
         return binding.getRoot();

@@ -5,20 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="65dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162"
+        app:srcCompat="@drawable/ic_question_foreground"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="375dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00000000"
+        android:contentDescription="TODO"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/points"
+        app:srcCompat="@drawable/text1" />
+
     <TextView
         android:id="@+id/points"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:fontFamily="@font/sf_pro_display_black"
-        tools:text="ВашиОчки:"
-        android:textColor="@color/black"
         android:gravity="center_horizontal"
+        android:textColor="@color/black"
         android:textSize="32sp"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:text="ВашиОчки:" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/CardView"
         android:layout_width="300dp"
         android:layout_height="300dp"
         app:cardCornerRadius="360dp"
@@ -39,6 +71,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/points"
             tools:ignore="SpeakableTextPresentCheck" />
+
     </androidx.cardview.widget.CardView>
 
 

@@ -14,6 +14,8 @@
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/doc.xml" value="0.1735" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_aspirant.xml" value="0.1" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_bachelor.xml" value="0.1" />
+        <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.151" />
+        <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_click.xml" value="0.151" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_cup.xml" value="0.1" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_dec.xml" value="0.1" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_diplom.xml" value="0.1" />
@@ -29,6 +31,7 @@
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_neon.xml" value="0.332" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_project.xml" value="0.332" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_prorec.xml" value="0.1" />
+        <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_question_foreground.xml" value="0.151" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_rector.xml" value="0.332" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_rector1.xml" value="0.1" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_sport.xml" value="0.332" />
@@ -37,10 +40,11 @@
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/drawable/ic_zav.xml" value="0.1" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/layout/activity_main.xml" value="0.16875" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/layout/fragment_auth.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/layout/fragment_clicker.xml" value="0.16875" />
+        <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/layout/fragment_clicker.xml" value="0.2" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/layout/fragment_initiative.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/layout/fragment_knowledge.xml" value="0.16875" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/layout/fragment_profile.xml" value="0.16875" />
+        <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/layout/fragment_test.xml" value="0.1762917933130699" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/layout/item_product.xml" value="0.13636363636363635" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16875" />
         <entry key="..\:/Users/pavel/StudioProjects/Kursovaya_clicker/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
